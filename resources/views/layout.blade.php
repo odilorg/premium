@@ -101,17 +101,16 @@
                     <!-- HEADER MENU -->
                     <nav class="header_menu">
                         <ul class="menu">
-                            <li class="current-menu-item">
-                                <a href="index.html">Home </span></a>
+                            <li class="{{ (request()->is('/')) ? 'current-menu-item' : '' }}">
+                                <a href="/">Home </span></a>
                                 
                             </li>
-                            <li><a href="{{ route('about') }}">About</a></li>
-                            <li><a href="room-5.html">Rooms</a></li>
-                            
-                            <li>
-                                <a href="restaurants-1.html">Restaurant <span class="fa fa-caret-down"></span></a>
-                               
-                            </li>
+                            <li class="{{ (request()->is('about')) ? 'current-menu-item' : '' }}"><a href="{{ route('about') }}">About</a></li>
+                            <li class="{{ (request()->is('rooms')) ? 'current-menu-item' : '' }}"><a href="{{ route('rooms') }}">Rooms</a></li>
+                            <li class="{{ (request()->is('restaurant')) ? 'current-menu-item' : '' }}"><a href="{{ route('restaurant') }}">Restaurant</a></li>
+                            <li class="{{ (request()->is('gallery')) ? 'current-menu-item' : '' }}"><a href="{{ route('gallery') }}">Gallery</a></li>
+                            <li class="{{ (request()->is('blog')) ? 'current-menu-item' : '' }}"><a href="{{ route('blog') }}">Blog</a></li>
+                            <li class="{{ (request()->is('contact')) ? 'current-menu-item' : '' }}"><a href="{{ route('contact') }}">Contact</a></li>
                             <li>
                                 <a href="#">Reservation <span class="fa fa-caret-down"></span></a>
                                 <ul class="sub-menu">
@@ -157,15 +156,8 @@
                                     <li><a href="comingsoon.html">Comming Soon</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="gallery.html">Gallery </a>
-                                
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog </a>
-                                
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            
+                           
                         </ul>
                     </nav>
                     <!-- END / HEADER MENU -->

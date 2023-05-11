@@ -16,3 +16,8 @@ use App\Http\Controllers\MainController;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 Route::view('/about', 'main.about')->name('about');
+Route::view('/rooms', 'main.rooms')->name('rooms');
+Route::view('/restaurant', 'main.restaurant')->name('restaurant');
+Route::view('/gallery', 'main.gallery')->name('gallery');
+Route::view('/blog', 'main.blog')->name('blog');
+Route::view('/contact', 'main.contact')->name('contact');
