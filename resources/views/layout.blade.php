@@ -105,17 +105,12 @@
                                 <a href="index.html">Home </span></a>
                                 
                             </li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="{{ route('about') }}">About</a></li>
                             <li><a href="room-5.html">Rooms</a></li>
                             
                             <li>
-                                <a href="#">Restaurant <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="restaurants-1.html">Restaurant 1</a></li>
-                                    <li><a href="restaurants-2.html">Restaurant 2</a></li>
-                                    <li><a href="restaurants-3.html">Restaurant 3</a></li>
-                                    <li><a href="restaurants-4.html">Restaurant 4</a></li>
-                                </ul>
+                                <a href="restaurants-1.html">Restaurant <span class="fa fa-caret-down"></span></a>
+                               
                             </li>
                             <li>
                                 <a href="#">Reservation <span class="fa fa-caret-down"></span></a>
@@ -131,18 +126,14 @@
                                 <a href="#">Page <span class="fa fa-caret-down"></span></a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">Guest Book <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="guest-book.html">Guest Book 1</a></li>
-                                            <li><a href="guest-book-2.html">Guest Book 2</a></li>
-                                        </ul>
+                                        <a href="guest-book.html">Guest Book <span class="fa fa-caret-right"></span></a>
+                                        
                                     </li>
                                     
                                     <li>
-                                        <a href="#">Event <span class="fa fa-caret-right"></span></a>
+                                        <a href="events.html">Event <span class="fa fa-caret-right"></span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="events-fullwidth.html">Events Fullwidth</a></li>
+                                           
                                             <li><a href="events-detail.html">Events Detail</a></li>
                                         </ul>
                                     </li>
@@ -150,11 +141,8 @@
                                         <a href="attractions.html">Attractions</a>
                                     </li>
                                     <li>
-                                        <a href="#">Term Condition <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="term-condition.html">Term Condition 1</a></li>
-                                            <li><a href="term-condition-2.html">Term Condition 2</a></li>
-                                        </ul>
+                                        <a href="term-condition.html">Term Condition <span class="fa fa-caret-right"></span></a>
+                                        
                                     </li>
                                     <li>
                                         <a href="#">Activiti <span class="fa fa-caret-down"></span></a>
@@ -170,20 +158,12 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Gallery <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="gallery.html">Gallery Style 1</a></li>
-                                    <li><a href="gallery-2.html">Gallery Style 2</a></li>
-                                    <li><a href="gallery-3.html">Gallery Style 3</a></li>
-                                </ul>
+                                <a href="gallery.html">Gallery </a>
+                                
                             </li>
                             <li>
-                                <a href="#">Blog <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-detail.html">Blog Detail</a></li>
-                                    <li><a href="blog-detail-fullwidth.html">Blog Detail Fullwidth</a></li>
-                                </ul>
+                                <a href="blog.html">Blog </a>
+                                
                             </li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>

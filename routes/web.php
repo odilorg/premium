@@ -15,3 +15,4 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('home');
+Route::view('/about', 'main.about')->name('about');
