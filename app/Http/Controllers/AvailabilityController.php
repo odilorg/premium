@@ -23,16 +23,35 @@ class AvailabilityController extends Controller
             'numAdult' => $num_adults,
             'numChild' => $num_children
         ]);
-        //$data = json_decode($response->object());
+        $data = json_decode($response);
 
-
+//dd($data);
 $ar =$response->collect();
-$filtered = $ar->flatten();
-foreach ($filtered as $value) {
-    if () {
-        # code...
-    }
+$filtered = $ar->whereBetween('roomsavail', [1, 100])->values()->toArray();
+//dd($filtered[0]);
+$room_price =[];
+$room_id = [];
+$rooms_avail=[];
+foreach ($filtered as $key => $value) {
+    $room_price[] = $filtered[$key]['price'];
+    $room_id[] = $filtered[$key]['roomId'];
+    $rooms_avail[] = $filtered[$key]['roomsavail'];
 }
+
+dd($room_id);
+
+
+dd($filtered);
+$value = $filtered->get('price');
+dd($value);
+
+// $filtered = $ar->flatten();
+// dd($filtered);
+// foreach ($filtered as $value) {
+//     if () {
+//         # code...
+//     }
+// }
 
 
         dd($filtered);
